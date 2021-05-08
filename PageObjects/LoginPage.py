@@ -23,16 +23,21 @@ class LoginPage:
         base.clearAndType(self.password_xpath, password)
         ScreenShot.take_screenshot(self.driver, 'credentials_filled')
         base.click(self.login_btn_xpath)
-        base.wait_till_click(self.text)
+
         try:
+            base.wait_till_click(self.alert_xpath)
+
+        except Exception:
+            base.wait_till_presence(self.text)
             print(self.driver.title)
-            assert "Inbox - Odoo" == self.driver.title
-            ScreenShot.take_screenshot(self.driver, 'successfully_logged_in')
+            if "Inbox - Odoo" == self.driver.title:
+                ScreenShot.take_screenshot(self.driver, 'successfully_logged_in')
+                return HomePage(self.driver)
 
-            return HomePage(self.driver)
+        value = base.getText(self.alert_xpath)
+        ScreenShot.take_screenshot(self.driver, value)
 
-        except AssertionError:
-            value = base.getText(self.alert_xpath)
-            ScreenShot.take_screenshot(self.driver, value)
+        return None
 
-            return None
+
+
