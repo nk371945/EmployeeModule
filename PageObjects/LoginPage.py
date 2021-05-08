@@ -1,5 +1,7 @@
 import time
 
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
+
 from PageObjects.BasePage import BasePage
 from PageObjects.HomePage import HomePage
 from selenium.webdriver.common.by import By
@@ -27,7 +29,7 @@ class LoginPage:
         try:
             base.wait_till_click(self.alert_xpath)
 
-        except Exception:
+        except TimeoutException:
             base.wait_till_presence(self.text)
             print(self.driver.title)
             if "Inbox - Odoo" == self.driver.title:

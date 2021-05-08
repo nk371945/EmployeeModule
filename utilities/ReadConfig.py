@@ -28,7 +28,7 @@ class ReadConfig:
 
     @staticmethod
     def get_test_report_excel_path():
-        excel_path = config.get('Excel info', 'excel_file_for_test_data')
+        excel_path = config.get('Excel info', 'excel_file_for_test_report')
         return excel_path
 
     @staticmethod
