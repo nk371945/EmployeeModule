@@ -1,0 +1,3 @@
+[32mINFO    [0m TestAddEmployee:test_employee.py:20 TestAddEmployee
+[32mINFO    [0m TestAddEmployee:test_employee.py:26 Logged In Successfully
+[32mINFO    [0m TestAddEmployee:test_employee.py:32 logged out successfully
