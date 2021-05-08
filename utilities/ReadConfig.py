@@ -20,3 +20,18 @@ class ReadConfig:
     def get_valid_login_password():
         password = config.get('common info', 'valid_login_password')
         return password
+
+    @staticmethod
+    def get_test_data_excel_path():
+        excel_path = config.get('Excel info', 'excel_file_for_test_data')
+        return excel_path
+
+    @staticmethod
+    def get_test_report_excel_path():
+        excel_path = config.get('Excel info', 'excel_file_for_test_data')
+        return excel_path
+
+    @staticmethod
+    def get_sheet_name_for_login():
+        sheet_name = config.get('Excel info', 'sheet_name_for_login')
+        return sheet_name
