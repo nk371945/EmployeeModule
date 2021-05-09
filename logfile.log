@@ -51,3 +51,27 @@
 2021-05-08 20:33:27,346 :INFO : TestLogin :logged out successfully
 2021-05-08 20:33:44,401 :INFO : TestLogin :Test_Login_0
 2021-05-08 20:33:46,583 :ERROR : TestLogin :Login failed
+2021-05-09 12:57:26,190 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 12:58:26,501 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:00:28,486 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 13:01:04,578 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:10:12,802 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 13:10:47,014 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:12:02,165 :INFO : TestAddEmployee :One employee added successfully
+2021-05-09 13:12:04,995 :INFO : TestAddEmployee :logged out successfully
+2021-05-09 13:12:17,068 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 13:12:51,291 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:14:34,768 :ERROR : TestAddEmployee :error while adding employee
+2021-05-09 13:14:37,831 :INFO : TestAddEmployee :logged out successfully
+2021-05-09 13:26:15,248 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 13:26:58,461 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:27:01,797 :INFO : TestAddEmployee :navigated to employee module
+2021-05-09 13:27:01,979 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-09 13:28:14,875 :INFO : TestAddEmployee :One employee added successfully
+2021-05-09 13:28:17,733 :INFO : TestAddEmployee :logged out successfully
+2021-05-09 13:28:28,260 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-09 13:29:02,580 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-09 13:29:05,251 :INFO : TestAddEmployee :navigated to employee module
+2021-05-09 13:29:05,424 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-09 13:30:45,745 :ERROR : TestAddEmployee :error while adding employee
+2021-05-09 13:30:48,173 :INFO : TestAddEmployee :logged out successfully

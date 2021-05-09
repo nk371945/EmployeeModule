@@ -9,15 +9,11 @@ from utilities import ReadConfig
 class TestLogin:
 
     logger = Logger.get_logger()
-    i = 0
 
     def test_login(self, setup, get_data):
         self.driver = setup
         self.driver.get(ReadConfig.ReadConfig.get_application_url())
         self.driver.maximize_window()
-
-        self.logger.info("Test_Login_"+str(self.i)+"")
-        self.i += 1
 
         login_page = LoginPage(self.driver)
 

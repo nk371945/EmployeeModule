@@ -51,7 +51,18 @@ class EmployeePage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    def add_a_employee(self, employee_name, employee_type, work_address, work_loc, email, mobile, dept, job_position, manager, sheet_name, rownum):
+    def add_a_employee(self,
+                       employee_name,
+                       employee_type,
+                       work_address,
+                       work_loc,
+                       email,
+                       mobile,
+                       dept,
+                       job_position,
+                       manager,
+                       sheet_name,
+                       row_num):
         try:
             self.click(self.create)
             self.wait_till_click(self.save)
@@ -79,24 +90,24 @@ class EmployeePage(BasePage):
             self.wait_till_click(self.edit)
 
             assert employee_name+" - Odoo" == self.driver.title
-            ScreenShot.takeScreenshot(self.driver, 'Employee ' + employee_name + ' Details')
-            if rownum != 0:
-                ExcelUtil.write_data(ReadConfig.getValues('test_report_file'),
-                                     sheet_name, rownum, 6,
+            ScreenShot.take_screenshot(self.driver, 'Employee ' + employee_name + ' Details')
+            if row_num != 0:
+                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                                     sheet_name, row_num, 6,
                                      "employee added successfully ")
-                ExcelUtil.write_data(ReadConfig.getValues('test_report_file'),
-                                     sheet_name, rownum, 7,
+                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                                     sheet_name, row_num, 7,
                                      'Pass')
             return "Pass"
 
         except Exception:
-            ScreenShot.takeScreenshot(self.driver, 'Error while adding new employee ' + employee_name)
-            if rownum != 0:
-                ExcelUtil.write_data(ReadConfig.getValues('test_report_file'),
-                                     sheet_name, rownum, 6,
+            ScreenShot.take_screenshot(self.driver, 'Error while adding new employee ' + employee_name)
+            if row_num != 0:
+                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                                     sheet_name, row_num, 6,
                                      "Error while adding employee")
-                ExcelUtil.write_data(ReadConfig.getValues('test_report_file'),
-                                     sheet_name, rownum, 7,
+                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                                     sheet_name, row_num, 7,
                                      'Pass')
             return None
 
@@ -108,7 +119,7 @@ class EmployeePage(BasePage):
         time.sleep(5)
         try:
             if self.get_element(self.OK).is_displayed():
-                ScreenShot.takeScreenshot(self.driver, 'deletion of Employee')
+                ScreenShot.take_screenshot(self.driver, 'deletion of Employee')
                 self.get_element(self.OK).click()
                 time.sleep(10)
         except NoSuchElementException:
