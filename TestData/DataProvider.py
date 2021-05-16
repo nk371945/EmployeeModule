@@ -1,6 +1,7 @@
 import datetime
 
-from utilities import ReadConfig, ExcelUtil
+from utilities import ExcelUtil
+from Configurations import ReadConfig
 
 
 class DataProvider:
@@ -44,11 +45,29 @@ class DataProvider:
                 dict['rowNum'] = i
 
                 now = datetime.datetime.now()
-                date_time = now.strftime("%m-%d-%Y,%H")
+                date_time = now.strftime("%m-%d-%Y,%H-%M-%S")
                 sheet_name = "TR-" + f_name + "-" + date_time
                 dict['sheet_name'] = sheet_name
 
                 data_list.append(dict)
+
+        elif sheet == 'Test_data_for_department':
+            test_sheet = ReadConfig.ReadConfig.get_sheet_name_for_add_department()
+            f_name = "department"
+            row_count = ExcelUtil.get_rowcount(file_path, test_sheet)
+            for i in range(4, row_count, 4):  # to get rows
+                Dict = {}
+                Dict['dept_name'] = ExcelUtil.read_data(file_path, test_sheet, i, 4)
+                Dict['parent_dept_name'] = ExcelUtil.read_data(file_path, test_sheet, i + 1, 4)
+                Dict['manager_name'] = ExcelUtil.read_data(file_path, test_sheet, i + 2, 4)
+                Dict['rowNum'] = i
+
+                now = datetime.datetime.now()
+                date_time = now.strftime("%m-%d-%Y,%H")
+                sheet_name = "TR-" + f_name + "-" + date_time
+                Dict['sheet_name'] = sheet_name
+
+                data_list.append(Dict)
 
         destination_file = ReadConfig.ReadConfig.get_test_report_excel_path()
         mr = ExcelUtil.get_rowcount(file_path, test_sheet)

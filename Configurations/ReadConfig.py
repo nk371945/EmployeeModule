@@ -37,6 +37,11 @@ class ReadConfig:
         return sheet_name
 
     @staticmethod
+    def get_sheet_name_for_add_department():
+        sheet_name = config.get('Excel info', 'sheet_name_for_add_department')
+        return sheet_name
+
+    @staticmethod
     def get_sheet_name_for_add_employee():
         sheet_name = config.get('Excel info', 'sheet_name_for_add_employee')
         return sheet_name

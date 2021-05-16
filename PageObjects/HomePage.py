@@ -1,6 +1,7 @@
 from selenium.webdriver.common.by import By
 
 from PageObjects.BasePage import BasePage
+from PageObjects.DepartmentPage import DepartmentPage
 from PageObjects.EmoloyeePage import EmployeePage
 
 
@@ -10,6 +11,9 @@ class HomePage(BasePage):
 
     employee_app = (By.LINK_TEXT, "Employees")
     employee_txt = (By.XPATH, "//li[text()='Employees']")
+
+    department_menu = (By.LINK_TEXT, "Departments")
+    departments_txt = (By.XPATH, "// li[text() = 'Departments']")
 
     employee_menu = (By.LINK_TEXT, "Employees")
 
@@ -29,6 +33,11 @@ class HomePage(BasePage):
         self.click(self.employee_menu)
         self.wait_till_presence(self.employee_txt)
         return EmployeePage(self.driver)
+
+    def navigate_to_app_department(self):
+        self.click(self.department_menu)
+        self.wait_till_presence(self.departments_txt)
+        return DepartmentPage(self.driver)
 
     def do_logout(self):
         self.click(self.user_menu)

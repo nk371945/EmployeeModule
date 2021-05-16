@@ -3,7 +3,7 @@ import pytest
 from Logs.Logger import Logger
 from PageObjects.LoginPage import LoginPage
 from TestData import DataProvider
-from utilities import ReadConfig
+from Configurations import ReadConfig
 
 
 class TestLogin:

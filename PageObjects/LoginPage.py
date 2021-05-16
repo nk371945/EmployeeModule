@@ -1,11 +1,9 @@
-import time
-
-from selenium.common.exceptions import NoSuchElementException, TimeoutException
+from selenium.common.exceptions import TimeoutException
 
 from PageObjects.BasePage import BasePage
 from PageObjects.HomePage import HomePage
 from selenium.webdriver.common.by import By
-from utilities import ReadConfig, ExcelUtil, ScreenShot
+from utilities import ScreenShot
 
 
 class LoginPage:

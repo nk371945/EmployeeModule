@@ -3,7 +3,8 @@ import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from PageObjects.BasePage import BasePage
-from utilities import ScreenShot, ExcelUtil, ReadConfig
+from utilities import ScreenShot, ExcelUtil
+from Configurations import ReadConfig
 
 
 class EmployeePage(BasePage):
