@@ -1,6 +1,0 @@
-[32mINFO    [0m TestAddEmployee:test_employee.py:20 TestAddEmployee
-[32mINFO    [0m TestAddEmployee:test_employee.py:26 Logged In Successfully
-[32mINFO    [0m TestAddEmployee:test_employee.py:30 navigated to employee module
-[32mINFO    [0m TestAddEmployee:test_employee.py:36 navigated to add employee form
-[32mINFO    [0m TestAddEmployee:test_employee.py:53 One employee added successfully
-[32mINFO    [0m TestAddEmployee:test_employee.py:59 logged out successfully

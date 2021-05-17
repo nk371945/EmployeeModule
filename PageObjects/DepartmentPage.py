@@ -1,3 +1,6 @@
+import time
+
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 from Configurations.ReadConfig import ReadConfig
@@ -20,6 +23,10 @@ class DepartmentPage(BasePage):
     SAVE = (By.XPATH, "//button[text()[normalize-space()='Save']]")
     EDIT = (By.XPATH, "//button[text()[normalize-space()='Edit']]")
 
+    action_btn = (By.XPATH, "//button[text()[normalize-space()='Action']]")
+    delete_btn = (By.XPATH, "//a[text()[normalize-space()='Delete']]")
+    OK = "//span[text()='Ok']"
+
     def __init__(self, driver):
         super().__init__(driver)
 
@@ -35,27 +42,41 @@ class DepartmentPage(BasePage):
             self.click(self.search_more)
             self.select_from_table(self.all_managers, manager_name)
             self.click(self.SAVE)
-            self.wait_till_click(self.EDIT)
+            time.sleep(5)
             assert parent_dept_name+" / "+dept_name+" - Odoo" == self.driver.title
             ScreenShot.take_screenshot(self.driver, 'department: ' + dept_name + ' Details')
             if rownum != 0:
-                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                ExcelUtil.write_data(ReadConfig.get_test_report_excel_path(),
                                      sheet_name, rownum, 6,
                                      "department added successfully ")
-                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                ExcelUtil.write_data(ReadConfig.get_test_report_excel_path(),
                                      sheet_name, rownum, 7,
                                      'Pass')
 
-            return EmployeePage(self.driver)
+            return "success"
 
-        except Exception:
+        except AssertionError:
             ScreenShot.take_screenshot(self.driver, 'Error while creating Department ' + dept_name)
             if rownum != 0:
-                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                ExcelUtil.write_data(ReadConfig.get_test_report_excel_path(),
                                      sheet_name, rownum, 6,
                                      "Error while adding department")
-                ExcelUtil.write_data(ReadConfig.ReadConfig.get_test_report_excel_path(),
+                ExcelUtil.write_data(ReadConfig.get_test_report_excel_path(),
                                      sheet_name, rownum, 7,
                                      'Pass')
 
             return None
+
+    def delete_department(self):
+        time.sleep(5)
+        self.click(self.action_btn)
+        self.click(self.delete_btn)
+        time.sleep(5)
+        try:
+            if self.get_element(self.OK).is_displayed():
+                ScreenShot.take_screenshot(self.driver, 'deletion of Employee')
+                self.get_element(self.OK).click()
+                time.sleep(10)
+        except NoSuchElementException:
+            pass
+        return "success"

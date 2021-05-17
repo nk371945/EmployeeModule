@@ -112,9 +112,8 @@ class EmployeePage(BasePage):
                                      'Pass')
             return None
 
-    def delete_employee(self, empName):
+    def delete_employee(self):
         time.sleep(5)
-        self.select_from_table(self.all_emp, empName)
         self.click(self.action_btn)
         self.click(self.delete_btn)
         time.sleep(5)

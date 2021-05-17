@@ -51,6 +51,12 @@ class TestAddEmployee:
 
             if add_emp is not None:
                 self.logger.info('One employee added successfully')
+                delete_emp = emp_page.delete_employee()
+                if delete_emp is not None:
+                    self.logger.info('One employee deleted successfully')
+                else:
+                    self.logger.error('error while deleting employee')
+
             else:
                 self.logger.error('error while adding employee')
 

@@ -30,13 +30,18 @@ class TestDepartment:
 
                 dept_page = homepage.navigate_to_app_department()
 
-                emp_page = dept_page.add_a_department(get_data['dept_name'],
-                                                      get_data['parent_dept_name'],
-                                                      get_data['manager_name'],
-                                                      get_data['sheet_name'],
-                                                      get_data['rowNum'])
-                if emp_page is not None:
+                result_dept = dept_page.add_a_department(get_data['dept_name'],
+                                                         get_data['parent_dept_name'],
+                                                         get_data['manager_name'],
+                                                         get_data['sheet_name'],
+                                                         get_data['rowNum'])
+                if result_dept is not None:
                     self.logger.info('one dept added successfully')
+                    delete_dept = dept_page.delete_department()
+                    if delete_dept is not None:
+                        self.logger.info('One department deleted successfully')
+                    else:
+                        self.logger.error('error while deleting department')
 
                 logout = homepage.do_logout()
                 if logout is not None:

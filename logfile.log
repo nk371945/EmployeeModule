@@ -95,3 +95,98 @@
 2021-05-16 09:26:21,207 :INFO : TestDepartment :TestAddDepartment
 2021-05-16 09:26:54,700 :INFO : TestDepartment :Logged In Successfully
 2021-05-16 09:26:58,133 :INFO : TestDepartment :navigated to employees app
+2021-05-16 22:01:44,169 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:02:23,456 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:02:26,662 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:02:26,853 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:03:25,289 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:09:00,033 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:09:33,560 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:09:36,544 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:09:36,730 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:10:31,787 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:11:49,253 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:12:22,904 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:12:25,330 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:12:25,511 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:15:21,533 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:15:55,009 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:15:57,435 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:15:57,668 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:18:22,058 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:18:57,741 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:19:00,254 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:19:00,787 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:44:15,406 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:44:54,239 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:44:56,778 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:44:56,964 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:46:09,938 :INFO : TestAddEmployee :One employee added successfully
+2021-05-16 22:46:30,645 :INFO : TestAddEmployee :One employee deleted successfully
+2021-05-16 22:46:33,379 :INFO : TestAddEmployee :logged out successfully
+2021-05-16 22:46:42,839 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 22:47:16,642 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 22:47:19,056 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 22:47:19,224 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 22:48:59,434 :ERROR : TestAddEmployee :error while adding employee
+2021-05-16 22:49:02,157 :INFO : TestAddEmployee :logged out successfully
+2021-05-16 22:54:44,689 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 22:55:22,091 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 22:55:24,629 :INFO : TestDepartment :navigated to employees app
+2021-05-16 22:57:23,442 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 22:57:58,354 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 22:58:00,758 :INFO : TestDepartment :navigated to employees app
+2021-05-16 22:58:32,580 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:05:35,969 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:06:10,636 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:06:13,260 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:06:44,600 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:06:54,199 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:07:27,285 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:07:29,703 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:08:29,549 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:15:57,193 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:16:31,704 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:16:34,254 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:17:05,181 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:17:15,898 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:17:50,349 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:18:45,396 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:19:19,765 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:19:22,228 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:19:57,528 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:20:31,913 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:20:34,153 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:24:35,064 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:25:08,589 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:25:11,072 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:25:44,496 :INFO : TestDepartment :one dept added successfully
+2021-05-16 23:26:05,223 :INFO : TestDepartment :One department deleted successfully
+2021-05-16 23:26:07,534 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:26:16,716 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:26:50,040 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:26:52,472 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:27:28,163 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:31:48,744 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:32:22,382 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:32:24,736 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:32:57,135 :INFO : TestDepartment :one dept added successfully
+2021-05-16 23:33:17,838 :INFO : TestDepartment :One department deleted successfully
+2021-05-16 23:33:20,193 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:33:30,322 :INFO : TestDepartment :TestAddDepartment
+2021-05-16 23:34:04,389 :INFO : TestDepartment :Logged In Successfully
+2021-05-16 23:34:06,563 :INFO : TestDepartment :navigated to employees app
+2021-05-16 23:34:42,058 :INFO : TestDepartment :successfully logged out
+2021-05-16 23:35:55,322 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 23:36:29,805 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 23:36:32,226 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 23:36:32,410 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 23:37:44,783 :INFO : TestAddEmployee :One employee added successfully
+2021-05-16 23:38:05,547 :INFO : TestAddEmployee :One employee deleted successfully
+2021-05-16 23:38:07,766 :INFO : TestAddEmployee :logged out successfully
+2021-05-16 23:38:18,164 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-16 23:38:52,318 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-16 23:38:54,766 :INFO : TestAddEmployee :navigated to employee module
+2021-05-16 23:38:55,017 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-16 23:40:40,062 :ERROR : TestAddEmployee :error while adding employee
+2021-05-16 23:40:43,767 :INFO : TestAddEmployee :logged out successfully

@@ -21,7 +21,7 @@ class DataProvider:
                 dict['row_num'] = i
 
                 now = datetime.datetime.now()
-                date_time = now.strftime("%m-%d-%Y,%H-%M-%S")
+                date_time = now.strftime("%m-%d-%Y,%H-%M")
                 sheet_name = "TR-" + f_name + "-" + date_time
                 dict['sheet_name'] = sheet_name
 
@@ -45,7 +45,7 @@ class DataProvider:
                 dict['rowNum'] = i
 
                 now = datetime.datetime.now()
-                date_time = now.strftime("%m-%d-%Y,%H-%M-%S")
+                date_time = now.strftime("%m-%d-%Y,%H-%M")
                 sheet_name = "TR-" + f_name + "-" + date_time
                 dict['sheet_name'] = sheet_name
 
@@ -63,7 +63,7 @@ class DataProvider:
                 Dict['rowNum'] = i
 
                 now = datetime.datetime.now()
-                date_time = now.strftime("%m-%d-%Y,%H")
+                date_time = now.strftime("%m-%d-%Y,%H-%M")
                 sheet_name = "TR-" + f_name + "-" + date_time
                 Dict['sheet_name'] = sheet_name
 
