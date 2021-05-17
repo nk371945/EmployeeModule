@@ -1,0 +1,6 @@
+[32mINFO    [0m TestDepartment:test_department.py:20 TestAddDepartment
+[32mINFO    [0m TestDepartment:test_department.py:26 Logged In Successfully
+[32mINFO    [0m TestDepartment:test_department.py:29 navigated to employees app
+[32mINFO    [0m TestDepartment:test_department.py:39 one dept added successfully
+[32mINFO    [0m TestDepartment:test_department.py:42 One department deleted successfully
+[32mINFO    [0m TestDepartment:test_department.py:48 successfully logged out
