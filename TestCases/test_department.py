@@ -24,7 +24,7 @@ class TestDepartment:
         homepage = login_page.do_login(self.login_email, self.login_password)
         if homepage is not None:
             self.logger.info('Logged In Successfully')
-            result = homepage.navigate_to_employees_app()
+            result = homepage.navigate_to_module()
             if result is not None:
                 self.logger.info('navigated to employees app')
 

@@ -25,7 +25,7 @@ class TestAddEmployee:
         if homepage is not None:
             self.logger.info('Logged In Successfully')
 
-            navi_emp_app = homepage.navigate_to_employees_app()
+            navi_emp_app = homepage.navigate_to_module()
             if navi_emp_app is not None:
                 self.logger.info('navigated to employee module')
             else:

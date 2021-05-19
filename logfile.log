@@ -190,3 +190,18 @@
 2021-05-16 23:38:55,017 :INFO : TestAddEmployee :navigated to add employee form
 2021-05-16 23:40:40,062 :ERROR : TestAddEmployee :error while adding employee
 2021-05-16 23:40:43,767 :INFO : TestAddEmployee :logged out successfully
+2021-05-17 01:46:31,448 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:39:53,249 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:40:36,177 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:43:23,633 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:43:57,352 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:44:16,104 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:44:52,792 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:50:34,334 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:51:08,961 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:51:49,601 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:52:23,940 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:55:58,764 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-19 00:56:34,315 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-19 00:56:38,564 :INFO : TestAddEmployee :navigated to employee module
+2021-05-19 00:56:38,719 :INFO : TestAddEmployee :navigated to add employee form

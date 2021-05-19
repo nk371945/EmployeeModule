@@ -3,13 +3,15 @@ from selenium.webdriver.common.by import By
 from PageObjects.BasePage import BasePage
 from PageObjects.DepartmentPage import DepartmentPage
 from PageObjects.EmoloyeePage import EmployeePage
+from Configurations import ReadConfig
 
 
 class HomePage(BasePage):
     user_menu = (By.XPATH, "(//li[@class='o_user_menu']//a)[1]")
     app_list = (By.CLASS_NAME, "full")
 
-    employee_app = (By.LINK_TEXT, "Employees")
+    module_name_link_text = (By.LINK_TEXT, "{module_name}")
+    name = ReadConfig.ReadConfig.get_module_name()
     employee_txt = (By.XPATH, "//li[text()='Employees']")
 
     department_menu = (By.LINK_TEXT, "Departments")
@@ -23,9 +25,11 @@ class HomePage(BasePage):
     def __init__(self, driver):
         super().__init__(driver)
 
-    def navigate_to_employees_app(self):
+    def navigate_to_module(self):
         self.click(self.app_list)
-        self.click(self.employee_app)
+        mod = list(self.module_name_link_text)
+        mod[1] = mod[1].format(module_name=self.name)
+        self.click(tuple(mod))
         self.wait_till_presence(self.employee_txt)
         return EmployeePage(self.driver)
 
