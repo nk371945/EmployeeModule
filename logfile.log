@@ -205,3 +205,37 @@
 2021-05-19 00:56:34,315 :INFO : TestAddEmployee :Logged In Successfully
 2021-05-19 00:56:38,564 :INFO : TestAddEmployee :navigated to employee module
 2021-05-19 00:56:38,719 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 03:47:59,051 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 03:48:39,072 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 03:48:44,420 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 03:48:44,593 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 03:50:42,726 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 03:51:18,688 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 03:51:21,778 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 03:51:22,005 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 03:52:31,393 :INFO : TestAddEmployee :One employee added successfully
+2021-05-20 03:57:42,385 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 03:58:16,106 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 03:58:18,616 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 03:58:18,776 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 03:59:58,725 :INFO : TestAddEmployee :One employee added successfully
+2021-05-20 04:00:19,469 :INFO : TestAddEmployee :One employee deleted successfully
+2021-05-20 04:00:23,116 :INFO : TestAddEmployee :logged out successfully
+2021-05-20 04:00:34,344 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 04:01:10,096 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 04:01:12,549 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 04:01:12,746 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 04:02:23,662 :INFO : TestAddEmployee :One employee added successfully
+2021-05-20 04:19:43,506 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 04:20:21,576 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 04:20:24,808 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 04:20:25,020 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 04:22:05,296 :INFO : TestAddEmployee :One employee added successfully
+2021-05-20 04:22:26,004 :INFO : TestAddEmployee :One employee deleted successfully
+2021-05-20 04:22:29,985 :INFO : TestAddEmployee :logged out successfully
+2021-05-20 04:22:41,975 :INFO : TestAddEmployee :TestAddEmployee
+2021-05-20 04:23:15,607 :INFO : TestAddEmployee :Logged In Successfully
+2021-05-20 04:23:18,396 :INFO : TestAddEmployee :navigated to employee module
+2021-05-20 04:23:18,667 :INFO : TestAddEmployee :navigated to add employee form
+2021-05-20 04:24:28,726 :ERROR : TestAddEmployee :error while adding employee
+2021-05-20 04:24:32,681 :INFO : TestAddEmployee :logged out successfully

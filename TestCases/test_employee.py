@@ -49,7 +49,7 @@ class TestAddEmployee:
                                               get_data['sheet_name'],
                                               get_data['rowNum'])
 
-            if add_emp is not None:
+            if add_emp is "pass":
                 self.logger.info('One employee added successfully')
                 delete_emp = emp_page.delete_employee()
                 if delete_emp is not None:
@@ -57,8 +57,11 @@ class TestAddEmployee:
                 else:
                     self.logger.error('error while deleting employee')
 
-            else:
+            elif add_emp is "error":
                 self.logger.error('error while adding employee')
+
+            elif add_emp is None:
+                self.logger.error('test failed')
 
             result = homepage.do_logout()
             if result is not None:
